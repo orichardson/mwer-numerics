@@ -13,10 +13,11 @@ The following experiment is run by  `coins.py` in this repository.
   | --- | ------------- | ------------- |
   | tails | 0  | -5  |
   | heads | 0  | +1  |
+
  - We update weights on the theories with likelihood updating, as suggested by Halpern, which also coincides with the Bayesian updates of the standard Bayesian setting, e.g., the one used by [Bengio et. al.](https://arxiv.org/abs/2408.05284), 
 
 
-# Preliminary Reults
+## Preliminary Reults
 
 Perhaps surprisingly, Halpern's minimax weighted expected regret (MWER) decision rule, which, again, interpolates between minimax expected regret minimization (which is a conservative decision rule) and expected utility maximization, appears to be *less* conservative than either decision rule.
 
