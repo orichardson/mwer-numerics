@@ -1,7 +1,7 @@
 # Minimax Weighted Expected Regret: Numerical Simulations
 
 We study Halpern's minimax weighted expected regret (MWER) decision rule
-[arXiv](https://arxiv.org/pdf/1302.5681),
+[[arXiv](https://arxiv.org/pdf/1302.5681)],
 a decision rule that interpolates between the conservative minimax expected regret (MER) and subjective expected utility (SEU).
 
 
@@ -23,9 +23,12 @@ The following experiment is run by  `coins.py` in this repository.
 
 ## Preliminary Reults
 
-Perhaps surprisingly, Halpern's minimax weighted expected regret (MWER) decision rule, which, again, interpolates between minimax expected regret minimization (which is a conservative decision rule) and expected utility maximization, appears to be *less* conservative than either decision rule.
+**This may well be the result of a buggy implementation.** 
+But if the code is correct, then we have found a surprising result.
 
-Here are a few results supporting that claim.
+Halpern's minimax weighted expected regret (MWER) decision rule, which, again, interpolates between minimax expected regret minimization (which is a conservative decision rule) and expected utility maximization, appears to be *less* conservative than either decision rule.
+
+here are some emperical results supporting that claim.
 
 Each plot below is for one fixed choice of true theory.
 In each case, the $x$-axis is the timestep $t$.  
