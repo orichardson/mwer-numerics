@@ -8,9 +8,9 @@ a decision rule that interpolates between the conservative minimax expected regr
 The following experiment is run by  `coins.py` in this repository.
 
  - Assume that there are $N+1$ coins, with biases ranging from 0 to 1. These are our possible theories.
- - For each possible choice of ``true theory'', we compute expected trajectories that result from using each decision rule.  The precise numbers do not matter, but for concreteness, the utilities and payoffs are given as follows:  
+ - For each possible choice of ``true theory'', we compute expected trajectories that result from using each decision rule.  The precise numbers do not matter, but for concreteness, the payoff matrix we use is given below:  
 
-  | U | No Action | Action |
+  | Utility | No Action | Action |
   | --- | ------------- | ------------- |
   | tails | 0  | -5  |
   | heads | 0  | +1  |
