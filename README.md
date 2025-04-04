@@ -9,7 +9,7 @@ a decision rule that interpolates between the conservative minimax expected regr
 
 The following experiment is run by  `coins.py` in this repository.
 
- - Assume that there are $N+1$ coins, with biases ranging from 0 to 1. These are our possible theories.
+ - Assume that there are $N$ coins, with biases ranging from 0 to 1. These are our possible theories.
  - For each possible choice of ``true theory'', we compute expected trajectories that result from using each decision rule.  The precise numbers do not matter, but for concreteness, the payoff matrix we use is given below:  
 
   | Utility | No Action | Action |
@@ -18,7 +18,7 @@ The following experiment is run by  `coins.py` in this repository.
   | heads | 0  | +1  |
 
  - We update weights on the theories with likelihood updating, as suggested by Halpern, which also coincides with the Bayesian updates of the standard Bayesian setting, e.g., the one used by [Bengio et. al.](https://arxiv.org/abs/2408.05284),
- - We average over $M = 5000% trajectories, and consider learning across timesteps $t \in \{0, 1, \ldots, T-1\}$, and the figures below are computed with $T=20$, and $N+1 = 11$ coins.
+ - We average over $M = 5000% trajectories, and consider learning across timesteps $t \in \{0, 1, \ldots, T-1\}$, and the figures below are computed with $T=20$, and $N = 11$ coins.
 
 
 ## Preliminary Reults
