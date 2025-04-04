@@ -18,15 +18,15 @@ The following experiment is run by  `coins.py` in this repository.
   | heads | 0  | +1  |
 
  - We update weights on the theories with likelihood updating, as suggested by Halpern, which also coincides with the Bayesian updates of the standard Bayesian setting, e.g., the one used by [Bengio et. al.](https://arxiv.org/abs/2408.05284),
- - We average over $M = 500% trajectories, and consider learning across timesteps $t \in \{0, 1, \ldots, T-1\}$, and the figures below are computed with $T=10$.
+ - We average over $M = 5000% trajectories, and consider learning across timesteps $t \in \{0, 1, \ldots, T-1\}$, and the figures below are computed with $T=20$, and $N+1 = 11$ coins.
 
 
 ## Preliminary Reults
 
 **This may well be the result of a buggy implementation.** 
-But if the code is correct, then we have found a surprising result.
+<!-- But if the code is correct, then we have found a surprising result. -->
 
-Halpern's minimax weighted expected regret (MWER) decision rule, which, again, interpolates between minimax expected regret minimization (which is a conservative decision rule) and expected utility maximization, appears to be *less* conservative than either decision rule.
+Lueng and Halpern's minimax weighted expected regret (MWER) decision rule, which, again, interpolates between minimax expected regret minimization (which is a conservative decision rule) and expected utility maximization, appears to be *less* conservative than either decision rule.
 
 here are some emperical results supporting that claim.
 
@@ -37,6 +37,7 @@ In each case, the $x$-axis is the timestep $t$.
  - In the bottom left, one can see the probability of acting according to each decision rule. Acting is, of course, risky. Note that MWER acts before EU does. 
 
 ![coin 2](figs/coin2-example.png?raw=true "Coin 2")
+![coin 5](figs/coin7-example.png?raw=true "Coin 5")
 ![coin 7](figs/coin7-example.png?raw=true "Coin 7")
 ![coin 9](figs/coin9-example.png?raw=true "Coin 9")
 
