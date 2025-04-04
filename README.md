@@ -37,7 +37,7 @@ In each case, the $x$-axis is the timestep $t$.
  - In the bottom left, one can see the probability of acting according to each decision rule. Acting is, of course, risky. Note that MWER acts before EU does. 
 
 ![coin 2](figs/coin2-example.png?raw=true "Coin 2")
-![coin 5](figs/coin7-example.png?raw=true "Coin 5")
+![coin 5](figs/coin5-example.png?raw=true "Coin 5")
 ![coin 7](figs/coin7-example.png?raw=true "Coin 7")
 ![coin 9](figs/coin9-example.png?raw=true "Coin 9")
 
